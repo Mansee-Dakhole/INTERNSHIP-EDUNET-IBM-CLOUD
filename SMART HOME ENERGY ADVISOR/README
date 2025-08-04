@@ -1,1 +1,108 @@
+# 🔌 Smart Home Energy Advisor Agent  
+An AI-powered energy management assistant built using IBM Cloud Watsonx.ai.  
+This agent analyzes smart home electricity usage, identifies high-consumption patterns, and provides actionable recommendations to optimize energy usage and reduce costs.
+
+---
+
+## 📌 Features
+- Generates **energy usage reports**  
+- Identifies **high-consumption appliances**  
+- Detects **peak-hour usage trends**  
+- Provides **cost-saving strategies**  
+- Answers natural language queries (e.g., *“Why is my bill high this month?”*)  
+- Encourages **sustainable energy usage**
+
+---
+
+## 🛠️ Technologies Used
+- **IBM Cloud Watsonx.ai Studio** – For building and managing AI agents  
+- **IBM Cloud Watsonx.ai Runtime** – For executing the AI model  
+- **IBM Cloud Agent Lab** – For creating and testing the AI agent  
+- **Mistral-large / IBM Granite Foundation Model** – Foundation model for reasoning and recommendations  
+- **Natural Language Processing (NLP)** – For interpreting user queries and generating responses  
+- **Retrieval-Augmented Generation (RAG)** – For combining AI model intelligence with dataset retrieval
+
+---
+
+## 🎯 Target Audience
+- Homeowners & Residents  
+- Smart Home Enthusiasts  
+- Energy Service Providers  
+- Sustainability Advocates & NGOs  
+
+---
+
+## 🚀 Setup & Deployment
+### **Prerequisites**
+- IBM Cloud account (Lite plan is sufficient for demo)
+- Watsonx.ai Studio & Runtime enabled
+- Energy usage dataset (TXT or CSV converted to text format)
+
+---
+
+## 📝 Steps to Run the Project
+1. **Login to IBM Cloud**  
+   - Go to [IBM Cloud](https://cloud.ibm.com)  
+   - Create/Login to your account  
+
+2. **Create Watsonx.ai Project**  
+   - Navigate to **Watsonx.ai Studio**  
+   - Click **Create Project**  
+   - Attach **Cloud Object Storage**  
+
+3. **Associate Watsonx.ai Runtime**  
+   - In your project, go to **Manage → Services & Integrations**  
+   - Add **Watsonx.ai Runtime (Lite)**  
+
+4. **Upload Dataset**  
+   - Go to **Assets tab** in your project  
+   - Upload your `EnergyData.txt` file  
+
+5. **Create Agent**  
+   - Click **New Asset → Agent**  
+   - Select **Mistral-large** (or Granite if available)  
+   - Add system prompt:
+     ```
+     You are a Smart Home Energy Advisor.
+     Use the provided dataset to analyze consumption, detect peak hours, 
+     identify high-usage appliances, and provide cost-saving recommendations.
+     ```
+   - Add dataset in **Knowledge section**  
+
+6. **Test Agent**  
+   - Click **Preview**  
+   - Ask test queries like:
+     - Why is my bill high this month?
+     - Which appliance consumes the most energy?
+
+7. **Deploy Agent**  
+   - Go to **Deployments tab**  
+   - Create a **Deployment Space**  
+   - Deploy your Agent to the space  
+
+8. **Access Agent**  
+   - Test in **Preview** or use API from Deployment Space  
+
+---
+
+## 📊 Example Queries
+- *Why is my bill high this month?*  
+- *Which appliance consumes the most energy?*  
+- *What time should I run my washing machine to save money?*  
+- *Give me 5 tips to reduce my electricity bill.*  
+
+---
+
+## 📌 Future Scope
+- Multilingual Support  
+- Voice-Activated Assistance  
+- Real-Time Smart Meter Integration  
+- Personalized Energy Saving Goals  
+- Mobile App Integration for Alerts & Insights  
+
+---
+
+## 📜 License
+This project is developed for educational and demonstration purposes under the IBM Cloud Lite plan.  
+Feel free to fork and experiment.
 
